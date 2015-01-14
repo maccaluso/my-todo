@@ -48,6 +48,12 @@
         "rangeController": {
             "prototype": "montage/core/range-controller"
         },
+        "task": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task"}
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -63,7 +69,7 @@
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
-            <li data-montage-id="listItem"></li>
+            <div data-montage-id="task"></div>
         </ul>
     </div>
 </body>
