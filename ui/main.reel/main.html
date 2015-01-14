@@ -38,12 +38,17 @@
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"},
-                "contentController": {"@": "rangeController"}
+                "element": {"#": "list"}
             }
         },
         "rangeController": {
             "prototype": "montage/core/range-controller"
+        },
+        "task1": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task1"}
+            }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
@@ -58,9 +63,11 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
-        <button data-montage-id="button"></button>
+        <button data-montage-id="button">
+
+        </button>
         <ul data-montage-id="list">
-            <div data-montage-id="task"></div>
+            <li data-montage-id="task1"></li>
         </ul>
     </div>
 </body>
